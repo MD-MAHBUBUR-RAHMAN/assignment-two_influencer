@@ -143,3 +143,69 @@ hr{
     .social a li{
         font-size: 1.4em;
     }
+    /* =============footer section end ================*/
+
+    /*//////////========media queary for mobile device===========\\\\\\\\ */
+    @media (max-width:688px) {
+        .container{
+            background-color: #ffffff;
+            max-width: 100vw;
+        }
+       .banner-item{
+        grid-template-columns: 1fr;
+        justify-items: center;
+       } 
+       .banner-left{
+           max-width: 100vw;
+           order: 2;
+       } 
+       .banner-right{
+           order: 1;
+       }
+       .banner h3{
+           text-align: center;
+       }
+       .camera img, .circle img{
+           height: 257px;
+           width: 257px;
+
+       }
+       .image-gallery{
+           grid-template-columns: 1fr;
+           max-width: 80vw;
+       }
+       .collections{
+           padding: 0;
+       }
+    }
+    /* \\\\\\\\\\\\\\\\media queary for tabloid/////////////////// */
+    @media (max-width: 991px) and (min-width: 689px) {
+        .container{
+            max-width: 100vw;
+        }
+       .banner-item{
+        grid-template-columns: 1fr;
+        justify-items: center;
+       } 
+       .banner-left{
+           max-width: 100vw;
+           order: 2;
+       } 
+       .banner-right{
+           order: 1;
+       }
+       .banner h3{
+           text-align: center;
+       }
+       .camera img, .circle img{
+           height: 257px;
+           width: 257px;
+       }
+       .image-gallery{
+           grid-template-columns: repeat(2, 1fr)
+       }
+       .collections{
+           padding: 05px;
+       }
+    } 
+
