@@ -13,13 +13,16 @@ body{
 }
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .container{
     background-color: #ffffff;
     width: 1200px;
-    padding: 20px;
+    padding: 40px;
 }
 /* -----------------banner part--------------- */
 .banner-item{
@@ -57,8 +60,40 @@ main{
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    height: fit-content;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     line-height: 24px;
 }
+/* banner part finished ---------------------------*/
+hr{
+    margin: 100px 0;
+}
+/* populer collection--------------------------------------------- */
+.collections{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px rgb(24, 21, 21);
+}
+.title-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.fa-star, .fa-star-half{
+    color: orange;
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.thumbnail{
+    width: 300px;
+    height: 256px;
+}
+.item-name{
+    font-weight: lighter
+}
+/* populer collection finished --------------------------------------*/
